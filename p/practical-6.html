@@ -5,34 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-6</title>
     <style>
-        .Ocard{
-            width: 300px;
-            height: 400px;
+        .card{
+            width: 330px;
+            height: 490px;
             background-color: whitesmoke;
             border-radius: 5px;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
+            
             float: left;
-            margin-top: 50px;
-            margin-left: 50px;
+            margin: 30px 20px;
         }
-        .Ocard:hover{
+        .card:hover{
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
         }
         .imag{
             width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 10px;
+            margin: auto;
+            margin-top: 10px;
         }
         img{
             border-radius: 5px;
             width: 100%;
-            height: 150px;
+            height: 200px;
         }
+        
         a{
             display: block;
-            border: 2px solid red;
             padding: 10px;
             width: 80%;
             text-align: center;
@@ -45,20 +42,20 @@
         }
         a:hover{
             background-color: blue;
-            border: 2px solid blue;
+        
         }
         .container{
-            margin-right: auto;
-            margin-left: auto;
+            margin: auto;
+            text-align: justify;
             width: 90%;
             background-color: whitesmoke;
-            height: 165px;
+            height: 200px;
         }
     </style>
 </head>
 <body style="background-color: lightgray;">
     <h1 style="color: white;">PRACTICAL-6: CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES.</h1>
-    <div class="Ocard">
+    <div class="card">
         <div class="imag">
             <img src="../images/A.jpg" alt="">
         </div>
@@ -69,7 +66,7 @@
         <a href="practical-5-html.html">Read More</a>
     </div>
 
-    <div class="Ocard">
+    <div class="card">
         <div class="imag">
             <img src="../images/css2.png" alt="">
         </div>
@@ -80,28 +77,29 @@
         <a href="practical-5-CSS.html">Read More</a>
     </div>
 
-    <div class="Ocard">
+    <div class="card">
         <div class="imag">
             <img src="../images/JS.png" alt="">
         </div>
         <div class="container">
             <h3 style="text-align: center;">Introduction to Java Script</h3>
             <p>JavaScript was initially created to “make web pages alive”.
-
                 The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.
-                
+                One syntactic difference from C is automatic semicolon insertion, which allows the semicolons that would normally terminate statements to be omitted.
                 </p>
         </div>
         <a href="practical-5-JS.html">Read More</a>
     </div>
 
-    <div class="Ocard">
+    <div class="card">
         <div class="imag">
             <img src="../images/bootstrap.jpg" alt="">
         </div>
         <div class="container">
             <h3 style="text-align: center;">Introduction to Bootstrap</h3>
-            <p>Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. It is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites.</p>
+            <p>Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. It is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites.
+                Bootstrap to further customize the appearance of their contents.
+            </p>
         </div>
         <a href="practical-5-B.html">Read More</a>
     </div>

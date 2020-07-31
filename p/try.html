@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        .card{
+            border: 3px solid whitesmoke;
+            width: 280px;
+            margin: 20px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            float: left;
+        }
+        .card img{
+            margin: 10px;
+        }
+        .card p{
+            margin: 10px;
+        }
+        a{
+            margin: 15px 10px;
+            display: block;
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: red;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        a:hover{
+            background-color: blue;
+        }
+        h4{
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    <img src="../images/my_html.png" alt="">
+    <div class="card">
+        <img style="border-radius: 10px;" width="260px" height="200px" src="../images/A.jpg" alt="">
+        <h4 style="text-align: center; font-weight: bold;">Introduction to HTML</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus qui possimus laborum laudantium iure dolore repellat ea, rerum sunt ratione a ipsam voluptates hic voluptatum.</p>
+        <a href="practical-5-html.html">Read More</a>
+    </div>
 </body>
 </html>
