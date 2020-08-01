@@ -3,72 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practical-6</title>
     <style>
-        body{
-            background-color: lightgray;
-        }
         .card{
-            width: 300px;
+            width: 20%;
             height: 500px;
-            border: 3px solid white;
-            border-radius: 10px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            
             float: left;
-            margin: 20px;
-            background-color: white;
+            margin: 30px 30px;
         }
         .card:hover{
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
         }
-        .card img{
-            border-radius: 5px;
+        .imag{
             width: 90%;
-            height: 150px;
+            margin: auto;
+            margin-top: 15px;
+        }
+        img{
+            border-radius: 5px;
+            width: 100%;
+            height: 200px;
+        }
+        
+        a{
+            display: block;
+            padding: 10px;
+            width: 80%;
+            text-align: center;
+            background-color: red;
+            text-decoration: none;
+            color: white;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 10px;
-            display: block;
+            border-radius: 5px;
         }
-        h4{
-            text-align: center;
-            margin: auto;
-        }
-        .card p{
-            margin: 30px;
-            text-align: justify;
-        }
-        a{
-        color: white;
-        border: 2px;
-        border-radius: 8px;
-        background-color: red;
-        display: block;
-        width: 80%;
-        margin: auto;
-        padding: 10px;
-        text-align: center; 
-        text-decoration: none;
+        a:hover{
+            background-color: blue;
         
-    }
-    a:hover{    background-color: blue; }
+        }
+        .container{
+            margin: auto;
+            text-align: justify;
+            width: 90%;
+            background-color: whitesmoke;
+            height: 210px;
+        }
     </style>
 </head>
-<body>
-    <h1 style="color: white; margin-left: 20px;">Practical 6: CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES.</h1>
+<body style="background-color: lightgray;">
+    <h1 style="color: white;">PRACTICAL-6: CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES.</h1>
     <div class="card">
-        <img src="../images/A.jpg" alt="html">
-        <h4>Introduction to HTML</h4>
-        <p>
-            Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
-        </p>
+        <div class="imag">
+            <img src="../images/A.jpg" alt="">
+        </div>
+        <div class="container">
+            <h3 style="text-align: center;">Introduction to HTML</h3>
+            <p>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser.HTML describes the structure of a web page semantically included cues for the appearance of the document.</p>
+        </div>
         <a href="practical-5-html.html">Read More</a>
     </div>
 
     <div class="card">
-        <img src="../images/css2.png" alt="html">
-        <h4>Introduction to HTML</h4>
-        <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.CSS is designed to enable the separation of presentation and content etc.</p>
+        <div class="imag">
+            <img src="../images/css2.png" alt="">
+        </div>
+        <div class="container">
+            <h3 style="text-align: center;">Introduction to CSS</h3>
+            <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.CSS is designed to enable the separation of presentation and content etc.</p>
+        </div>
         <a href="practical-5-CSS.html">Read More</a>
+    </div>
+
+    <div class="card">
+        <div class="imag">
+            <img src="../images/JS.png" alt="">
+        </div>
+        <div class="container">
+            <h3 style="text-align: center;">Introduction to Java Script</h3>
+            <p>JavaScript was initially created to “make web pages alive”.
+                The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.
+                One syntactic difference from C is automatic semicolon insertion.
+                </p>
+        </div>
+        <a href="practical-5-JS.html">Read More</a>
+    </div>
+
+    <div class="card">
+        <div class="imag">
+            <img src="../images/bootstrap.jpg" alt="">
+        </div>
+        <div class="container">
+            <h3 style="text-align: center;">Introduction to Bootstrap</h3>
+            <p>Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. It is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites.
+                
+            </p>
+        </div>
+        <a href="practical-5-B.html">Read More</a>
     </div>
 </body>
 </html>
