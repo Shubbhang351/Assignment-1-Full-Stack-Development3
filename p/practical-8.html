@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical 7</title>
+    <title>Practical 8</title>
     
     <style>
         *{
@@ -13,50 +13,42 @@
         #container{
             border: 5px solid whitesmoke;
             width: 1500px;
-            margin: 0px auto;
+            margin: auto;
             padding: 15px;
             display: block;
             justify-content: center;
             align-items: center ;
         }
-        #header{
-            background-color: gray;
-            height: 70px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: whitesmoke;
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
+       
         #banner{
             background-color: lightblue;
-            width: 100%;
+            width: 98%;
             height: 700px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
             font-size: 40px;
-            margin-bottom: 15px;
+            margin:15px auto;
+            position: relative;
+            z-index: 1;
         }
         #banner img{
             height: 100%;
             width: 100%;
         }
         #section-1{
-            width: 100%;
+            width: 98%;
             height: 350px;
             /* border: solid red; */
         }
         #c1, #c2, #c3, #c4{
             width: 20%;
-            height: 250px;
+            height: 260px;
             border-radius: 50%;
             background-color: darkgoldenrod;
             float: left; 
-            margin: 15px 30px;
+            margin: 15px 35px;
         }
         .c1_avatar, .c2_avatar, .c3_avatar, .c4_avatar{
             width: 100%;
@@ -64,9 +56,10 @@
             border-radius: 50%;
         } 
         #section-2{
-            width: 100%;
+            width: 98%;
             height: 500px;
             /* border: solid red; */
+            margin: auto;
         }
         #section-2::after{
             content: '';
@@ -78,13 +71,7 @@
             float: left;
             width: 48%;
             height: 97%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 40px;
             margin-bottom: 15px;
-
         }
         #right{
             /* background-color: crimson; */
@@ -130,9 +117,9 @@
             height: 100%;
         }
         #section-3{
-            width: 100%;
+            width: 98%;
             height: 450px;
-            
+            margin: auto;
         }
         #section-3::after{
             content: '';
@@ -144,7 +131,7 @@
             height: 95%;
             background-color: whitesmoke;
             border-radius: 5px;
-            margin: 30px;
+            margin:15px 35px;
             float: left;
         }
         #s1:hover, #s2:hover, #s3:hover, #s4:hover{
@@ -178,39 +165,77 @@
         }
         #footer{
             background-color: pink;
-            height: 120px;
-            width: 100%;
+            height: 100px;
+            width: 98%;
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
             color: black;
             font-size: x-large;
-            margin-bottom: 15px;
+            margin: auto;
         }
         h1{
             text-align: center;
-            padding: 50px;
+            padding-top: 80px;
+            padding-bottom: 25px;
+        }
+
+        ul{
+            width: 1472px;
+            margin: 0px auto;
+            list-style: none;
+            padding: 0;
+            overflow: hidden;
+            background-color: gray;
+            position: sticky;
+            top: 0px;
+            right: 0px;
+            z-index: 3;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        ul li{
+            display: inline-block;
+        }
+
+        ul li a{
+            text-decoration: none;
+            width: 100%;
+            text-align: center;
+            display: block;
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px 15px;
+            font-weight: normal;
+            font-size: 30px;
+            margin: 0px 30px;
+        }
+        ul li a:hover{
+            background-color: whitesmoke;
+            color: black;
         }
 
     </style>
-    <link rel="stylesheet" href="../css/Navigation.css">
+    
     
 </head>
-<body>
+<body style="overflow-x: hidden;">
     
     <div id="container">
         <a id="back_to_top"></a>
-        <div id="header">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about_us">About us</a></li>
-                <li><a href="#_team">Team</a></li>
-                <li><a href="#_tech">Technologies</a></li>
-                <li id="right_side"><a href="#_contact">Content</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about_us">ABOUT US</a></li>
+            <li><a href="#_team">TEAM</a></li>
+            <li><a href="#_tech">TECHNOLOGIES</a></li>
+            <li id="right_side"><a href="#_contact">CONTACT</a></li>
+        </ul>
+        
         <div id="banner">
-            <h3 style="position: absolute;top: 100px; left: 170px; font-family: Arial, Helvetica, sans-serif;">PRACTICAL-8</h3>
+            <h3 style="position: absolute;top: 10px; left: 20px; font-family: Arial, Helvetica, sans-serif;">PRACTICAL-8</h3>
             <img src="../images/lap1.jpg" alt="">
         </div>
         <a id="_team"></a>
@@ -234,7 +259,12 @@
         <h1>About US</h1>
         
         <div id="section-2">
-                <div id="left">Main Content</div>
+                <div id="left">
+                   <h1 style="color: white; padding: 0px;">About Projects</h1>
+                <p style="font-size: x-large; text-align: justify; padding: 8px; color: white;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum asperiores quam facilis corporis obcaecati delectus non commodi perspiciatis animi, labore distinctio quod, alias nesciunt odio ratione inventore. Magni repellendus nesciunt obcaecati laboriosam iste quam, recusandae distinctio adipisci doloremque neque repudiandae dolores illum accusamus quod maiores eaque dignissimos ullam totam quisquam! Nostrum expedita atque, corporis earum beatae qui reprehenderit quam ea cum aspernatur aperiam minus rem repellat nulla est consequuntur ipsam pariatur nemo veniam facilis sit velit! Placeat blanditiis odit harum ratione delectus nesciunt. Porro placeat suscipit quae praesentium? Exercitationem molestias vero quidem adipisci esse quia nulla omnis facere et quae dignissimos odit aperiam perferendis dolor blanditiis impedit, quibusdam accusamus! Eius minus dolore labore. Eum aut nisi excepturi aliquid incidunt, ab quas! Ea laborum error dolore facere vero exercitationem totam velit perspiciatis? Assumenda maxime debitis veritatis ullam, neque atque sed consectetur quam asperiores itaque quos, odio officia, ipsam suscipit similique.
+                </p>
+                </div>
                 <div id="right">
                     <div id="a1" style="margin-bottom: 2.5px;">
                         <img class="a1_p1" src="../images/p1.jpg" alt="">
@@ -293,8 +323,8 @@
         <h1>Contact</h1>
         <div id="footer">
            <pre style="font-family: Arial, Helvetica, sans-serif;">
-            Website Template for Practical-8 &#169 <a href=""> Beta-labs</a>
-                             <a href="#back_to_top">Back to Top</a>
+            Website Template for Practical-8 &#169 <a href="https://www.beta-labs.in/"> Beta-labs</a>
+             <a  href="#back_to_top">Back to Top</a>
            </pre>
             
             
