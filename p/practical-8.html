@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical 8</title>
-    
+
     <style>
-        *{
+        * {
             margin: 0px;
             padding: 0px;
         }
-        #container{
+
+        #container {
             border: 5px solid whitesmoke;
             width: 1500px;
             margin: auto;
             padding: 15px;
             display: block;
             justify-content: center;
-            align-items: center ;
+            align-items: center;
         }
-       
-        #banner{
+
+        #banner {
             background-color: lightblue;
             width: 98%;
             height: 700px;
@@ -29,57 +31,72 @@
             align-items: center;
             color: white;
             font-size: 40px;
-            margin:15px auto;
+            margin: 15px auto;
             position: relative;
             z-index: 1;
         }
-        #banner img{
+
+        #banner img {
             height: 100%;
             width: 100%;
         }
-        #section-1{
+
+        #section-1 {
             width: 98%;
             height: 350px;
             /* border: solid red; */
         }
-        #c1, #c2, #c3, #c4{
+
+        #c1,
+        #c2,
+        #c3,
+        #c4 {
             width: 20%;
             height: 300px;
             border-radius: 50%;
             background-color: darkgoldenrod;
-            float: left; 
+            float: left;
             margin: 15px 35px;
         }
-        .c1_avatar, .c2_avatar, .c3_avatar, .c4_avatar{
+
+        .c1_avatar,
+        .c2_avatar,
+        .c3_avatar,
+        .c4_avatar {
             width: 100%;
             height: 100%;
             border-radius: 50%;
-        } 
-        #section-2{
+        }
+
+        #section-2 {
             width: 98%;
             height: 500px;
             /* border: solid red; */
             margin: auto;
         }
-        #section-2::after{
+
+        #section-2::after {
             content: '';
             display: block;
             clear: both;
         }
-        #left{
+
+        #left {
             background-color: lightslategray;
             float: left;
             width: 48%;
             height: 97%;
             margin-bottom: 15px;
         }
-        #right{
+
+        #right {
             /* background-color: crimson; */
             float: right;
             width: 48%;
             height: 100%;
         }
-        #a1{
+
+        #a1 {
             background-color: crimson;
             width: 100%;
             height: 30%;
@@ -90,7 +107,8 @@
             font-size: 40px;
             margin-bottom: 3%;
         }
-        #a2{
+
+        #a2 {
             background-color: crimson;
             width: 100%;
             height: 30%;
@@ -101,7 +119,8 @@
             font-size: 40px;
             margin: 3% 0px;
         }
-        #a3{
+
+        #a3 {
             background-color: crimson;
             width: 100%;
             height: 30%;
@@ -112,44 +131,66 @@
             font-size: 40px;
             margin: 3% 0px;
         }
-        .a1_p1, .a2_p2, .a3_p3{
+
+        .a1_p1,
+        .a2_p2,
+        .a3_p3 {
             width: 100%;
             height: 100%;
         }
-        #section-3{
+
+        #section-3 {
             width: 98%;
             height: 450px;
             margin: auto;
         }
-        #section-3::after{
+
+        #section-3::after {
             content: '';
             display: block;
             clear: both;
         }
-        #s1, #s2, #s3, #s4{
+
+        #s1,
+        #s2,
+        #s3,
+        #s4 {
             width: 20%;
             height: 95%;
             background-color: whitesmoke;
             border-radius: 5px;
-            margin:15px 35px;
+            margin: 15px 35px;
             float: left;
         }
-        #s1:hover, #s2:hover, #s3:hover, #s4:hover{
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+
+        #s1:hover,
+        #s2:hover,
+        #s3:hover,
+        #s4:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
         }
-        .s1_html, .s1_css, .s1_js, .s1_b{
+
+        .s1_html,
+        .s1_css,
+        .s1_js,
+        .s1_b {
             width: 90%;
             height: 40%;
             margin: 10px 10px;
             border-radius: 5px;
         }
-        .s1_html_content, .s1_css_content, .s1_js_content, .s1_b_content{
+
+        .s1_html_content,
+        .s1_css_content,
+        .s1_js_content,
+        .s1_b_content {
             /* background-color: blue; */
             width: 90%;
             height: 33%;
-            margin:15px  auto;
+            margin: 15px auto;
         }
-        .button{
+
+        .button {
             display: block;
             padding: 5px;
             width: 80%;
@@ -160,10 +201,12 @@
             margin: 5px auto;
             border-radius: 9px;
         }
-        .button:hover{
+
+        .button:hover {
             background-color: blue;
         }
-        #footer{
+
+        #footer {
             background-color: pink;
             height: 100px;
             width: 98%;
@@ -175,13 +218,14 @@
             font-size: x-large;
             margin: auto;
         }
-        h1{
+
+        h1 {
             text-align: center;
             padding-top: 80px;
             padding-bottom: 25px;
         }
 
-        ul{
+        ul {
             width: 1472px;
             margin: 0px auto;
             list-style: none;
@@ -192,16 +236,17 @@
             top: 0px;
             right: 0px;
             z-index: 3;
-            display: flex; 
+            display: flex;
             justify-content: center;
             align-items: center;
             color: white;
         }
-        ul li{
+
+        ul li {
             display: inline-block;
         }
 
-        ul li a{
+        ul li a {
             text-decoration: none;
             width: 100%;
             text-align: center;
@@ -213,17 +258,18 @@
             font-size: 30px;
             margin: 0px 30px;
         }
-        ul li a:hover{
+
+        ul li a:hover {
             background-color: whitesmoke;
             color: black;
         }
-
     </style>
-    
-    
+
+
 </head>
-<body style="overflow-x: hidden;">
-    
+
+<body>
+
     <div id="container">
         <a id="back_to_top"></a>
         <ul>
@@ -233,40 +279,48 @@
             <li><a href="#_tech">TECHNOLOGIES</a></li>
             <li id="right_side"><a href="#_contact">CONTACT</a></li>
         </ul>
-        
+
         <div id="banner">
-            <h3 style="position: absolute;top: 10px; left: 20px; font-family: Arial, Helvetica, sans-serif;">PRACTICAL-8</h3>
+            <h3 style="position: absolute;top: 10px; left: 20px; font-family: Arial, Helvetica, sans-serif;">PRACTICAL-8
+            </h3>
             <img src="../images/lap1.jpg" alt="">
         </div>
         <a id="_team"></a>
         <h1>Team Members</h4>
-        <div id="section-1">
-            
-            <div id="c1">
-                <img class = "c1_avatar" src="../images/avatar_1.png" alt="">
+            <div id="section-1">
+
+                <div id="c1">
+                    <img class="c1_avatar" src="../images/avatar_1.png" alt="">
+                </div>
+                <div id="c2">
+                    <img class="c2_avatar" src="../images/avatar_2.png" alt="">
+                </div>
+                <div id="c3">
+                    <img class="c3_avatar" src="../images/avatar_3.png" alt="">
+                </div>
+                <div id="c4">
+                    <img class="c4_avatar" src="../images/avatar_4.png" alt="">
+                </div>
             </div>
-            <div id="c2">
-                <img class="c2_avatar" src="../images/avatar_2.png" alt="">
-            </div>
-            <div id="c3">
-                <img class="c3_avatar" src="../images/avatar_3.png" alt="">
-            </div>
-            <div id="c4">
-                <img class="c4_avatar" src="../images/avatar_4.png" alt="">
-            </div>
-        </div>
-        <a id="about_us"></a>
-        <h1>About US</h1>
-        
-        <div id="section-2">
+            <a id="about_us"></a>
+            <h1>About US</h1>
+
+            <div id="section-2">
                 <div id="left">
-                   <h1 style="color: white; text-align: left; padding-top: 10px;">About Projects</h1>
-                <p style="font-size: x-large; text-align: justify; padding: 8px; color: white;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum asperiores quam facilis 
-                    corporis obcaecati delectus non commodi perspiciatis animi, labore distinctio quod, alias nesciunt odio ratione inventore.
-                     Magni repellendus nesciunt obcaecati laboriosam iste quam, recusandae distinctio adipisci doloremque neque repudiandae dolores 
-                     illum accusamus quod maiores eaque dignissimos ullam totam quisquam! Nostrum expedita atque, corporis earum beatae qui reprehenderit quam ea cum aspernatur aperiam minus rem repellat nulla est consequuntur ipsam pariatur nemo veniam facilis sit velit! Placeat blanditiis odit harum ratione delectus nesciunt. Porro placeat suscipit quae praesentium? Exercitationem molestias vero quidem adipisci esse quia nulla omnis facere et quae dignissimos odit aperiam perferendis dolor blanditiis impedit, quibusdam accusamus! Eius minus dolore labore. 
-                </p>
+                    <h1 style="color: white; text-align: left; padding-top: 10px;">About Projects</h1>
+                    <p style="font-size: x-large; text-align: justify; padding: 8px; color: white;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum asperiores quam facilis
+                        corporis obcaecati delectus non commodi perspiciatis animi, labore distinctio quod, alias
+                        nesciunt odio ratione inventore.
+                        Magni repellendus nesciunt obcaecati laboriosam iste quam, recusandae distinctio adipisci
+                        doloremque neque repudiandae dolores
+                        illum accusamus quod maiores eaque dignissimos ullam totam quisquam! Nostrum expedita atque,
+                        corporis earum beatae qui reprehenderit quam ea cum aspernatur aperiam minus rem repellat nulla
+                        est consequuntur ipsam pariatur nemo veniam facilis sit velit! Placeat blanditiis odit harum
+                        ratione delectus nesciunt. Porro placeat suscipit quae praesentium? Exercitationem molestias
+                        vero quidem adipisci esse quia nulla omnis facere et quae dignissimos odit aperiam perferendis
+                        dolor blanditiis impedit, quibusdam accusamus! Eius minus dolore labore.
+                    </p>
                 </div>
                 <div id="right">
                     <div id="a1" style="margin-bottom: 2.5px; position: relative;">
@@ -275,68 +329,75 @@
                     </div>
                     <div id="a2" style="margin-bottom: 2.5px; position: relative;">
                         <h3 style="position: absolute;top: 0; color: black;">Project-2</h3>
-                    <img class="a2_p2" src="../images/p2.jpeg" alt="">
+                        <img class="a2_p2" src="../images/p2.jpeg" alt="">
                     </div>
                     <div id="a3" style="margin-bottom: 2.5;position: relative;">
                         <h3 style="position: absolute;top: 0; color: black;">Project-3</h3>
-                    <img class="a3_p3" src="../images/p3.jpg" alt="">
+                        <img class="a3_p3" src="../images/p3.jpg" alt="">
                     </div>
                 </div>
-        </div>
-        <a id="_tech"></a>
-        <h1>Technologies Used</h1>
-        <div id="section-3">
-            <div id="s1">
-                <img class="s1_html" src="../images/A.jpg" alt="">
-                <h3 style="text-align: center;">Introduction to HTML</h3>
-                <div class="s1_html_content">
-                    <p>Hypertext Markup Language is the standard markup language for documents designed to be displayed
-                         in a web browser.HTML describes the structure of a web page </p>
-                </div>
-                <a class="button" href="practical-5-html.html">Read More</a>
             </div>
-            <div id="s2">
-                <img class="s1_css" src="../images/css2.png" alt="">
-                <h3 style="text-align: center;">Introduction to CSS</h3>
-                <div class="s1_css_content">
-                    <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.CSS is designed to enable the separation of presentation and content etc.</p>
+            <a id="_tech"></a>
+            <h1>Technologies Used</h1>
+            <div id="section-3">
+                <div id="s1">
+                    <img class="s1_html" src="../images/A.jpg" alt="">
+                    <h3 style="text-align: center;">Introduction to HTML</h3>
+                    <div class="s1_html_content">
+                        <p>Hypertext Markup Language is the standard markup language for documents designed to be
+                            displayed
+                            in a web browser.HTML describes the structure of a web page </p>
+                    </div>
+                    <a class="button" href="practical-5-html.html">Read More</a>
+                </div>
+                <div id="s2">
+                    <img class="s1_css" src="../images/css2.png" alt="">
+                    <h3 style="text-align: center;">Introduction to CSS</h3>
+                    <div class="s1_css_content">
+                        <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a
+                            document written in a markup language like HTML.CSS is designed to enable the separation of
+                            presentation and content etc.</p>
 
+                    </div>
+                    <a class="button" href="practical-5-CSS.html">Read More</a>
                 </div>
-                <a class="button" href="practical-5-CSS.html">Read More</a>
-            </div>
-            <div id="s3">
-                <img class="s1_js" src="../images/JS.png" alt="">
-                <h3 style="text-align: center;">Introduction to JavaScript</h3>
-                <div class="s1_js_content">
-                    <p>JavaScript was initially created to “make web pages alive”.
-                        The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.
-                        
+                <div id="s3">
+                    <img class="s1_js" src="../images/JS.png" alt="">
+                    <h3 style="text-align: center;">Introduction to JavaScript</h3>
+                    <div class="s1_js_content">
+                        <p>JavaScript was initially created to “make web pages alive”.
+                            The programs in this language are called scripts. They can be written right in a web page’s
+                            HTML and run automatically as the page loads.
+
                         </p>
+                    </div>
+                    <a class="button" href="practical-5-JS.html">Read More</a>
                 </div>
-                <a class="button" href="practical-5-JS.html">Read More</a>
-            </div>
-            <div id="s4">
-                <img class="s1_b" src="../images/bootstrap.jpg" alt="">
-                <h3 style="text-align: center;">Introduction to Bootstrap</h3>
-                <div class="s1_b_content">
-                                <p>Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. It is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites.
+                <div id="s4">
+                    <img class="s1_b" src="../images/bootstrap.jpg" alt="">
+                    <h3 style="text-align: center;">Introduction to Bootstrap</h3>
+                    <div class="s1_b_content">
+                        <p>Bootstrap is a free and open-source tool collection for creating responsive websites and web
+                            applications. It is the most popular HTML, CSS, and JavaScript framework for developing
+                            responsive, mobile-first web sites.
 
+                    </div>
+                    <a class="button" href="practical-5-B.html">Read More</a>
                 </div>
-                <a class="button" href="practical-5-B.html">Read More</a>
             </div>
-        </div>
-        <a id="_contact"></a>
-        <h1>Contact</h1>
-        <div id="footer">
-           <pre style="font-family: Arial, Helvetica, sans-serif; font-size: large;">
+            <a id="_contact"></a>
+            <h1>Contact</h1>
+            <div id="footer">
+                <pre style="font-family: Arial, Helvetica, sans-serif; font-size: large;">
 
             Website Template for Practical-8 &#169 <a href="https://www.beta-labs.in/"> Beta-labs</a>
 
              <a  href="#back_to_top">Back to Top</a>
            </pre>
-            
-            
-        </div>
+
+
+            </div>
     </div>
 </body>
+
 </html>
