@@ -40,17 +40,31 @@
     <div id="container">
         <button id="minus" disabled>-</button>
         <div style="height: 50px; width: 300px; background-color: gray; margin: auto 10px; ">
-            <span id="field" style="text-align: center; display: block; font-size: 50px; color: yellow;">0</span>
+            <span id="field" style="text-align: center; display: block; font-size: 50px; color: yellow;"></span>
         </div>
         <button id="plus">+</button>
 
     </div>
     <script>
         var p = document.getElementById('plus');
-        p.onclick = function() {
-            var field = document.getElementById('field');
-            field.innerText = "1"
-        }
+        var field = document.getElementById('field');
+        var m = document.getElementById('minus');
+        var num = 0;
+        field.innerText = String(num);
+        p.addEventListener('click',() => {
+            num = num + 1;
+            field.innerText = String(num);
+            if (num > 0){
+                m.disabled = false;
+            }
+        })
+        m.addEventListener('click',() => {
+            num = num - 1;
+            field.innerText = String(num);
+            if (num <= 0){
+                m.disabled = true;
+            }
+        })
     </script>
 </body>
 </html>
