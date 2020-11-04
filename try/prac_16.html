@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 16</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            background: linear-gradient(to right, rgb(163, 224, 245) 0%, rgb(83, 83, 224) 100%);
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+        
+        #main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        #inp{
+            width: 350px;
+            /* flex: 1; */
+            outline: none;
+            font-size: 30px;
+            border: 0;
+            padding: 5px;
+        }
+        .fa-plus-square{
+           color: blue;
+           font-size: 25px;
+        }
+        #add{
+            font-size: 30px;
+            padding: 5px 10px 5px 10px;
+            border: 0;
+            outline: none;
+            background-color: white;
+        }
+        #add:hover{
+            background-color:rgb(250, 225, 125);
+        }
+
+        #todo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #todo .div_css{
+            min-width: 200px;
+           background-color: white;
+            
+        }
+        /*#todo .div_css .li_items{
+             display: flex;
+            justify-content: space-between; 
+            min-width: 200px;
+            background-color: white;
+            margin: 10px;
+        } */
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 55px;">Fullstack To-Do List</h1>
+    <section id="main">
+        <input id="inp" type="text">
+            <button  id="add">
+                <i class="fa fa-plus-square"></i>
+            </button>
+    </section>
+
+    <ul id="todo"></ul>
+    <!-- <script>
+        var todo=document.querySelector("#todo");
+        var add=document.querySelector("#add");
+        var inp=document.getElementById("inp");
+        add.onclick=items;
+
+        function items(){
+            var inp_value=document.getElementById("inp");
+            if(inp_value.value.length > 0){
+                var a=document.createElement('div');
+                a.classList.add("div_css");
+                todo.appendChild(a);
+                a.innerHTML=inp.value + '<button><i class="fa fa-check"></i></button>' + '<button><i class="fa fa-trash-o"></i></button>';
+
+                // var li_item=document.createElement('li');
+                // a.classList.add("li_items");
+                // a.appendChild(li_item);
+                
+                // li_item.innerHTML=inp.value + '<button><i class="fa fa-check"></i></button>' + '<button><i class="fa fa-trash-o"></i></button>';
+            }
+        }
+    </script> -->
+    <script src="../js/todo.js"></script>
+</body>
+</html>
