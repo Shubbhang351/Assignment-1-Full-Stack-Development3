@@ -5,7 +5,7 @@ const greeting = document.getElementById('greeting');
 const name = document.getElementById('name');
 const day = document.getElementById('day');
 
-document.body.style.backgroundImage = "url('./1.jpg')";
+
 
 
 

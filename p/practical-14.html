@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +9,46 @@
 </head>
 
 <style>
-    *{
+    * {
         padding: 0;
         margin: 0;
         box-sizing: content-box;
         font-family: Arial, Helvetica, sans-serif;
     }
-    body{   background-color: rgb(204, 204, 204);   }
 
-    main{
+    body {
+        background-color: rgb(204, 204, 204);
+    }
+
+    main {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         margin-top: 20px;
         flex-wrap: wrap;
     }
-    input[type="text"], input[type="password"]{
+
+    input[type="text"],
+    input[type="password"] {
         display: block;
         margin: 0 auto;
         width: 100%;
         border: none;
-        border-bottom: 1.5px solid rgb(169,169,169,.4);
+        border-bottom: 1.5px solid rgb(169, 169, 169, .4);
         padding: 13px 3px;
-        font-family: Arial, Helvetica, sans-serif;     
-        font-size: medium;   
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
     }
-    input[type="text"]:focus, input[type="password"]:focus{
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
         outline-style: none;
         border-bottom: 1.5px solid rgba(0, 38, 255, 0.849);
     }
-    .a, .b, .c{
+
+    .a,
+    .b,
+    .c {
         width: 350px;
         height: 475px;
         background-color: white;
@@ -46,7 +56,8 @@
         position: relative;
         margin-bottom: 25px;
     }
-    .aa{
+
+    .aa {
         height: 30%;
         width: 100%;
         background-color: rgb(238, 208, 151);
@@ -55,24 +66,28 @@
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
     }
-    .aa h2{
+
+    .aa h2 {
         padding-top: 10px;
         font-size: 35px;
         color: white;
     }
-    .aa i{
+
+    .aa i {
         margin: 28px 20px;
         font-size: 28px;
         color: white;
     }
-    .a #fp{
+
+    .a #fp {
         font-family: Arial, Helvetica, sans-serif;
         margin-left: 173px;
         text-decoration: none;
-        color:black;
+        color: black;
         font-size: 17px;
     }
-    .a #login{
+
+    .a #login {
         display: block;
         float: left;
         margin-left: 10%;
@@ -83,35 +98,41 @@
         margin-right: 20px;
         box-shadow: 0 2px rgba(0, 0, 0, .2);
     }
-    .a p{
+
+    .a p {
         font-size: 13px;
         padding: 10px 0;
     }
-    .a a{
+
+    .a a {
         text-decoration: none;
         color: black;
         font-size: 13px;
     }
 
-    .b h2, .c h2{
+    .b h2,
+    .c h2 {
         display: block;
         width: 100%;
         margin-top: 15px;
-        text-align: center;  
-        color: deeppink;      
+        text-align: center;
+        color: deeppink;
         font-size: 40px;
-    }    
-    .b #art1{
+    }
+
+    .b #art1 {
         width: 80%;
         margin: 0 auto;
         font-size: 12px;
     }
-    .b #art1 a{
+
+    .b #art1 a {
         color: rgb(42, 185, 233);
         text-decoration: none;
         font-size: 12px;
     }
-    .b #signup{
+
+    .b #signup {
         display: block;
         float: left;
         text-decoration: none;
@@ -122,18 +143,21 @@
         color: white;
         font-weight: 500;
         margin-right: 15px;
-        box-shadow: 0 2px rgba(0,0,0,.2);
+        box-shadow: 0 2px rgba(0, 0, 0, .2);
     }
-    .b p{
+
+    .b p {
         padding: 8px;
         font-size: 15px;
     }
-    .b a{
+
+    .b a {
         text-decoration: none;
         font-size: 17px;
         color: rgb(70, 181, 218);
     }
-    .b #art2{
+
+    .b #art2 {
         position: absolute;
         bottom: 0;
         height: 20%;
@@ -145,23 +169,26 @@
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
     }
-    .b #art2 a{
+
+    .b #art2 a {
         font-size: 25px;
         color: white;
     }
 
-    .c #art1{
+    .c #art1 {
         width: 80%;
-        margin:auto;
+        margin: auto;
         clear: both;
     }
-    .c #art1 a{
+
+    .c #art1 a {
         text-decoration: none;
         font-size: 14px;
         color: rgb(42, 185, 233);
         float: right;
     }
-    .c #signin{
+
+    .c #signin {
         display: block;
         width: 80%;
         margin: 0 auto;
@@ -171,9 +198,10 @@
         text-align: center;
         text-decoration: none;
         color: white;
-        box-shadow: 0 2px rgba(0,0,0,.2);
+        box-shadow: 0 2px rgba(0, 0, 0, .2);
     }
-    .c #art2{
+
+    .c #art2 {
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -181,38 +209,43 @@
         justify-content: space-evenly;
         text-align: center;
     }
-    .c #art2 i{
+
+    .c #art2 i {
         display: inline-block;
         margin: 10px 20px;
         padding: 5px 10px;
         font-size: 20px;
         color: rgb(20, 139, 212);
-        border: 1px solid rgb(242,237,255);
+        border: 1px solid rgb(242, 237, 255);
         border-top: none;
         border-radius: 15px;
-        box-shadow: 0 2px rgba(0,0,0,.1);
+        box-shadow: 0 2px rgba(0, 0, 0, .1);
         width: 50px;
     }
 
-    header{
+    header {
         font-size: 3.5vw;
         text-align: center;
         color: red;
         font-weight: 600;
         margin: 20px 0 50px 0;
     }
-    .ph{
+
+    .ph {
         position: relative;
         width: 80%;
         margin: 0 auto;
     }
-    .sp{
+
+    .sp {
         position: absolute;
         top: 0;
         left: 0;
     }
-    input:focus + .sp, input:not(:placeholder-shown) + .sp {
-        transform:  translateY(-92%) translateX(2px);
+
+    input:focus+.sp,
+    input:not(:placeholder-shown)+.sp {
+        transform: translateY(-92%) translateX(2px);
         font-size: 12px;
         font-weight: 600;
         color: rgba(0, 38, 255, 0.849);
@@ -238,7 +271,7 @@
                 <input type="text" placeholder=" " id="yname">
                 <span class="sp">Your email</span>
             </article>
-                <br>
+            <br>
             <article class="ph" style="margin-bottom: 5px;">
                 <input type="password" placeholder=" ">
                 <span class="sp">Your password</span>
@@ -246,7 +279,7 @@
             <a href="#" id="fp">Forgot <b>Password?</b></a>
             <br><br><br><br><br>
             <a href="#" id="login">LOG IN</a>
-            <p>Don't have an account?<a href=""> <b>Sign Up</b></a></p>    
+            <p>Don't have an account?<a href=""> <b>Sign Up</b></a></p>
         </section>
 
         <section class="b">
@@ -256,7 +289,7 @@
                 <input type="text" placeholder=" " id="yname">
                 <span class="sp">Your email</span>
             </article>
-                <br>
+            <br>
             <article class="ph">
                 <input type="password" placeholder=" ">
                 <span class="sp">Your password</span>
@@ -285,7 +318,7 @@
                 <input type="text" placeholder=" " id="yname">
                 <span class="sp">Your email</span>
             </article>
-                <br>
+            <br>
             <article class="ph">
                 <input type="password" placeholder=" ">
                 <span class="sp">Your password</span>
@@ -308,4 +341,5 @@
         </section>
     </main>
 </body>
+
 </html>
